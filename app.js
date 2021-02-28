@@ -47,6 +47,8 @@ function randomSelect() {
       const randomTag = pickRandomTag();
 
       highlightTag(randomTag);
+      randomTag.classList.add('selected');
+      randomTag.innerHTML += ' 🎉';
     }, 100)
   }, times * 100)
 }
